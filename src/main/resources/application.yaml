@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:database
+
+  graphql:
+    schema:
+      printer:
+        enabled: true
+
+    graphiql:
+      enabled: true
+    cors:
+      allowed-methods: true
+      allowed-headers: true
+      allowed-origins: true
+#    path: /mygraph
